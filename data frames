@@ -1,0 +1,44 @@
+import pandas as pd
+data = {
+    "calories": [4220,3800,390],
+    "duration":[50,48,45]    
+}
+
+myvar=pd.DataFrame(data)
+print(myvar)
+
+
+import pandas as pd
+
+marks={
+    "english":[22,43,54],
+    "grade":["a","b","c"]
+    
+}
+
+mydata=pd.DataFrame(marks)
+print(mydata)
+
+
+import pandas as pd
+data = {
+    "calories" :[120,430,210],
+    "tenure": [1,2,3]
+}
+
+df = pd.DataFrame(data)
+print(df.loc[[0, 1]])
+
+
+
+import pandas as pd
+
+data = {
+  "calories": [420, 380, 390],
+  "duration": [50, 40, 45]
+}
+
+df = pd.DataFrame(data, index = ["day1", "day2", "day3"])
+print(df.loc["day2"])
+
+# print(df) 
